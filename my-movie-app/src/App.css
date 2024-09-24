@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 97vw;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+header {
+  background-color: #1c1c1c;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #e50914;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #e50914;
+  font-family: 'Cinematograf', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.movie-card {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-card .details {
+  text-align: center;
+}
+
+.movie-card .details h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.movie-card .details p {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.movie-list a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #e50914;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.movie-list a:hover {
+  background-color: #b0060e;
+}
+
+.movie-list h2 {
+  margin: 20px 0;
+}
+
+.movie-card .rating {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e50914;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #b0060e;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+header h1 {
+  font-family: 'Anton', sans-serif;
+}
+
+.search-button {
+  padding: 10px 20px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 20px 0;
+}
+
+.search-button:hover {
+  background-color: #b0060e;
+}
+
+.page-container {
+  width: 95vw;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.page-container h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.page-container p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.page-container button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.page-container button:hover {
+  background-color: #b0060e;
+}
+
+.search-results {
+  margin-top: 30px;
+}
+
+.search-results h2 {
+  margin-bottom: 15px;
+}
+
+.search-results button {
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+/* @media (max-width: 768px) {
+  .movie-card {
+    margin-bottom: 20px;
+  }
+} */
+
+.movie-result {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 20px;
+}
+
+.movie-poster {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-info h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.movie-info button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.no-poster {
+  width: 100px;
+  height: 150px;
+  background-color: #444;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
